@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="A1" class ="com.amit.SpringUsingXml" autowire="byType">
+   
+   <!-- <property name="age" value="20"></property>
+   <property name="com" ref="com"></property> -->
+   <!-- <constructor-arg index="0" value="45"></constructor-arg>
+   <constructor-arg index="1" ref="lap111"></constructor-arg> -->
+   </bean>
+   <bean id="com1" class ="com.amit.Laptop" primary="true" ></bean>
+
+   In the lazy init it will inly create the object when it is required 
+   <bean id="com" class ="com.amit.desktop" lazy-init="true" ></bean>
+   
+   <!-- <bean id="A2" class ="com.amit.SpringUsingXml"></bean> -->
+   
+</beans>
